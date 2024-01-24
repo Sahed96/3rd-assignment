@@ -22,8 +22,8 @@
 
 </head>
 
-<body class="container w-full mx-auto lg:px-28 px-8 font-manrope">
-    <header>
+<body class="container w-full mx-auto font-manrope">
+    <header class="lg:px-28 px-8 mx-auto">
         <!-- navbar -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -55,8 +55,8 @@
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <div class="navbar-end gap-2">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="navbar-end gap-4">
+                <img src="./Images/srch.png" alt="" class="hidden lg:flex hover:cursor-pointer">
                 <a class="btn bg-[#FF4240] p-x-6 p-y-4 text-white font-bold text-xl">Get Ticket</a>
             </div>
         </div>
@@ -78,7 +78,7 @@
                 </div>
                 <div id="slide2" class="carousel-item relative w-full flex flex-col">
                     <img src="./Images/h1.png" class="w-full" />
-                    <div class="lg:absolute lg:bottom-8 lg:right-8 mt-4 bg-[#131318] lg:w-[556px] p-8 rounded-3xl">
+                    <div class="lg:absolute lg:bottom-8 lg:right-8 mt-4 bg-[#131318] lg:w-[556/px] p-8 rounded-3xl">
                         <h3 class="font-extrabold text-2xl text-[#FFF] ">Meet all the heroes from the field</h3>
                         <p class="text-[#FFFFFF99] text-sm font-medium mt-4">Dit amet consectetur. Condimentum dignissim
                             adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
@@ -93,7 +93,7 @@
         </div>
         </div>
     </header>
-    <main>
+    <main class="lg:px-28 px-8">
         <section>
             <!-- performance section -->
             <div class="text-center my-20">
@@ -233,7 +233,7 @@
                         <div class="hero-content flex-col lg:flex-row border-2 rounded-2xl border-slate-200">
                             <img src="./Images//7.png" class="max-w-sm rounded-lg shadow-2xl" />
                             <div class="space-y-2">
-                                <div class="flex list-none gap-5 ">
+                                <div class="flex flex-col-3 list-none gap-5 ">
                                     <li><i class="fa-solid fa-star"></i>5.0</li>
                                     <li><i class="fa-regular fa-eye"></i>20</li>
                                     <li><i class="fa-regular fa-heart"></i>200</li>
@@ -400,7 +400,7 @@
             </div>
             <div class="lg:flex mx-auto gap-10">
                 <div>
-                    <div class="w-[474px] h-[764px] rounded-2xl border-2 border-slate-200">
+                    <div class="lg:w-[474px] lg:h-[764px] rounded-2xl border-2 border-slate-200">
                         <div class="bg-[#BCED6D1A] rounded-2xl w-[374px] h-[216px] mx-auto ">
                             <img class="pt-8 mx-8 my-8" src="./Images/call.png" alt="">
                             <p class="pl-8 pb-2">phone number:</p>
@@ -444,8 +444,7 @@
                             </div>
                             <div class="flex flex-col col-span-2 gap-2">
                                 <label class="pl-4 font-bold text-xl text-[#131318]">Messege</label>
-                                <textarea cols="10" rows="10"
-                                    class="bg-[#13131808] rounded-xl px-5 py-4"></textarea>
+                                <textarea cols="10" rows="10" class="bg-[#13131808] rounded-xl px-5 py-4"></textarea>
                             </div>
                             <button
                                 class="btn bg-[#FF4240] px-6 py-2 w-full col-span-2 text-center text-xl text-[#FFF] font-bold">Send
@@ -464,31 +463,56 @@
             </div>
         </section>
     </main>
-    <footer class="w-auto h-[454px] p-20 mx-auto footer bg-[#131318] text-white text-base-content">
-        <aside>
-          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
-        </aside> 
-        <nav>
-          <header class="footer-title">Services</header> 
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Company</header> 
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
-        </nav> 
-        <nav>
-          <header class="footer-title">Legal</header> 
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
-        </nav>
-      </footer>
+    <footer class="footer p-28 bg-[#131318] lg:h-[454px]">
+        <aside class="gap-5 items-center justify-center">
+            <h3 class="font-extrabold text-2xl text-white">Get In Touch</h3>
+            <p class="text-[#FFFFFF99] text-base font-medium">Dit amet consectetur. Condimentum adipiscing <br>
+                aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin.</p>
+            <div class="space-y-3 text-white">
+                <div class="flex text-center gap-5">
+                    <img src="./Images/redmsg.png" alt="">
+                    <p>hockeys@support.com</p>
+                </div>
+                <div class="flex text-center gap-5">
+                    <img src="./Images/redcall.png" alt="">
+                    <p>(+62) 123-321-543</p>
+                </div>
+            </div>
+        </aside>
+        <div class="flex text-center flex-col-2 space-x-28">
+            <nav class="flex flex-col">
+                <header class="footer-title text-lg text-white font-bold">Company</header>
+                <div class="text-[#FFFFFF99] flex flex-col space-y-4">
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Leadership</a>
+                    <a class="link link-hover">Career</a>
+                    <a class="link link-hover">News&Article</a>
+                    <a class="link link-hover">Leagal Notice</a>
+                </div>
+            </nav>
+            <nav class="flex flex-col">
+                <header class="footer-title text-lg text-white font-bold">Support</header>
+                <div class="text-[#FFFFFF99] flex flex-col space-y-4">
+                    <a class="link link-hover">Help Center</a>
+                    <a class="link link-hover">FAQ</a>
+                    <a class="link link-hover">Ticket Support</a>
+                    <a class="link link-hover">Contact us</a>
+                </div>
+            </nav>
+        </div>
+        <div class="text-center ml-16 space-y-5">
+            <nav class="flex flex-col">
+                <header class="footer-title text-lg text-white font-bold">Services</header>
+                <div class="text-[#FFFFFF99] flex flex-col space-y-4">
+                    <a class="link link-hover">Academy</a>
+                    <a class="link link-hover">Group Lesson</a>
+                    <a class="link link-hover">Private Lesson</a>
+                    <a class="link link-hover">Hockeys for kids</a>
+                    <a class="link link-hover">Hockeys for Adult</a>
+                </div>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
